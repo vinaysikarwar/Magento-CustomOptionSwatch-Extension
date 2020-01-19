@@ -1,0 +1,11 @@
+<script type="text/javascript">
+
+ require(['jquery', 'jquery/ui'], function($){ 
+	
+	
+	$('select[id^="select"]').each(function () {
+		$('.product-options-wrapper #'+this.id).select2OptionPicker();
+	});  
+   });
+
+</script>

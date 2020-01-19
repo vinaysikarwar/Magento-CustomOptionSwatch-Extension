@@ -1,0 +1,22 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="wtc" translate="label" sortOrder="10">
+            <label>Web Technology Codes</label>
+        </tab>
+        <section id="colorswatch" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Color Swatch</label>
+            <tab>wtc</tab>
+            <resource>WTC_ColorSwatch::setting_configuration</resource>
+            <group id="csimages" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                
+				<label>Upload Color Swatch Image</label>
+                <field id="cs_upload_image" translate="label"  sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="select">
+                    <label>Color Swatch Images</label>
+                    <frontend_model>WTC\ColorSwatch\Block\Adminhtml\Form\Field\Images</frontend_model>
+                    <backend_model>WTC\ColorSwatch\Block\Adminhtml\Config\Backend\Images</backend_model>
+				</field>
+            </group>
+        </section>
+    </system>
+</config>
